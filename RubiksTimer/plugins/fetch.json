@@ -1,0 +1,28 @@
+{
+    "org.awokenwell.proximity": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/awoken-well/cordova-plugin-proximity",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-whitelist": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-whitelist@1.2.2"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-insomnia": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/EddyVerbruggen/Insomnia-PhoneGap-Plugin",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}
