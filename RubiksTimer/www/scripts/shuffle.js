@@ -3,6 +3,8 @@
 
     document.addEventListener('deviceready', onDeviceReady.bind(this), false);
 
+    window.scrambleLength = 25;
+
     function onDeviceReady() {
 
         document.getElementById("backButton").onclick = function () {
@@ -10,13 +12,22 @@
         }
 
         document.getElementById("resetButton").onclick = function () {
-            generateShuffle(14);
+            generateShuffle(scrambleLength);
         }
+
+        var inp = document.getElementById('lengthInput');
+        inp.addEventListener("input", function () {
+            window.scrambleLength = this.value;
+            document.getElementById('rangeDisplay').innerText = this.value;
+        });
+
+
+        document.getElementById('rangeDisplay').innerText = window.scrambleLength;
 
         //Disable the sensor (for iOS) as it is not needed in this part of the app
         navigator.proximity.disableSensor();
 
-        generateShuffle(14);
+        generateShuffle(scrambleLength);
     };
 
     var randint = function (a, b) {

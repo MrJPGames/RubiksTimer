@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/shuffle.css">
     <title>RubiksTimer</title>
+    <preference name="UIWebViewBounce" value="false" />
 </head>
     <body>
         <div class="wrapper">
@@ -21,9 +22,9 @@
             <div id="shuffleDisplay">
                 Generating Shuffle
             </div>
+            <button id="backButton">Go back to timer</button>
             <button id="resetButton">Reshuffle</button>
-            <button id="backButton">Go back to timer</button><br />
-            <span id="state">Hold hand over phone</span>
+            <input type="range" max="50" min="1" id="lengthInput"/><span id="rangeDisplay"></span>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="scripts/platformOverrides.js"></script>
