@@ -1,0 +1,44 @@
+﻿li{
+    background: url("../res/rotations.png");
+    background-size: 150vw 50vw;
+    width: 25vw;
+    height: 25vw;
+    display: inline-block;
+}
+
+#moveF {
+    background-position: 0 0;
+}
+#moveFp {
+    background-position: 0 -25vw;
+}
+#moveB {
+    background-position: -25vw 0;
+}
+#moveBp {
+    background-position: -25vw -25vw;
+}
+#moveL {
+    background-position: -50vw -25vw;
+}
+#moveLp {
+    background-position: -50vw 0;
+}
+#moveR {
+    background-position: -75vw 0;
+}
+#moveRp {
+    background-position: -75vw -25vw;
+}
+#moveU {
+    background-position: -100vw 0;
+}
+#moveUp {
+    background-position: -100vw -25vw;
+}
+#moveD {
+    background-position: -100vw 0;
+}
+#moveDp {
+    background-position: -100vw -25vw;
+}

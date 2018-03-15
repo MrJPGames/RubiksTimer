@@ -15,6 +15,11 @@
         document.getElementById("resetButton").onclick = function () {
             window.msec = 0;
             updateTimerDisplay();
+            navigator.proximity.enableSensor();
+        }
+
+        document.getElementById("shuffleButton").onclick = function () {
+            window.location.href = "shuffle.html";
         }
 
         //Enable the sensor (for iOS)
@@ -58,14 +63,13 @@
         window.plugins.insomnia.keepAwake();
         window.startTime = Date.now();
         window.timerRunning = true;
-        document.getElementById("state").innerText = "Timer running";
     }
 
     function stopTimer() {
         window.stopTime = Date.now();
         window.msec = window.stopTime - window.startTime;
         window.timerRunning = false;
-        document.getElementById("state").innerText = "Hand detected timer stopped!";
+        navigator.proximity.disableSensor();
         window.plugins.insomnia.allowSleepAgain();
     }
 
